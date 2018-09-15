@@ -1,0 +1,63 @@
+@import "global";
+
+.flex-container {
+
+  height: 300px;
+  background-color: #F0f0f0;
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 2px 2px 2px #ccc;
+  .item1 {
+    height: 100px;
+    width: 30%;
+    background-color: #F5DE25;
+  }
+  .item2 {
+    height: 200px;
+    width: 20%;
+    font-size: 50px;
+
+    //flex-grow: 0.5;
+//flex-shrink: 0.5;
+    background-color: #B1FF84;
+  }
+
+  .item3 {
+    height: auto;
+    width: 10%;
+    font-size: 20px;
+    background-color: #90D9F7;
+  }
+}
+
+.warpper {
+  margin: 10px;
+
+}
+.ranger{
+  display: flex;
+}
+
+.card {
+  @include card();
+  margin-top: 30px;
+  width: 130px;
+}
+
+/* 以下为辅助样式 */
+
+h1 {
+  font-size: 30px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.select {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    margin: 10px;
+  }
+}

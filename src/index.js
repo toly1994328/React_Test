@@ -1,15 +1,7 @@
-import React from 'react'
-import {render} from 'react-dom'
-import {createStore} from 'redux'
-import {Provider} from 'react-redux'
-import App from './components/App'
-import reducer from './reducers';
+import React from 'react';//引入React库
+import ReactDOM from 'react-dom';
+import FlexBox from "./components/FlexBox";
+//组件挂载在dom上
 
-const store = createStore(reducer);
-
-render(
-    <Provider store={store}>
-        <App/>
-    </Provider>,
-    document.getElementById('root')
-);
+//将App.js渲染入dom
+ReactDOM.render(<FlexBox />, document.getElementById('root'));
