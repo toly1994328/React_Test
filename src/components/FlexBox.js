@@ -6,7 +6,6 @@ const $ = window.$;
 new Q($);
 
 class FlexBox extends Component {
-
     render() {
         return (
             <div>
